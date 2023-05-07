@@ -1,0 +1,55 @@
+*{
+  padding: 2vw;  
+  margin: 2vw;
+  color: blueviolet;
+
+}
+
+.GridContainer{
+    display: grid;
+    grid-template-areas: 'header header header' "left right right" 'bottomleft bottomall bottomall';
+}
+
+.item1{
+    grid-area: header;
+    text-align: center;
+    background-color: yellow;
+    width: 50%;
+    transition: width 2s;
+}
+.item1:hover{
+    width: 89%;
+}
+.item2{
+    grid-area: left;
+    background-color: yellow;
+
+}
+.item3{
+    grid-area: right;
+    background-color: yellow;
+}
+
+.item4{
+    grid-area: bottomleft;
+    background-color: yellow;
+}
+
+.item5{
+    grid-area: bottomall;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+    .GridContainer{
+        display: grid;
+        grid-template-areas: 'header'
+        'left'
+        'right'
+        'bottomleft'
+        'bottomall';
+    }
+}
+div:hover{
+
+}
