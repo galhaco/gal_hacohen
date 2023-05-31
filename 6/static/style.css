@@ -13,9 +13,17 @@ button {
     color:  blue;
     border: 1px solid blue;
     border-radius: 50%;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    transition: 1s;
+}
+button:hover {
+    width: 200px;
 }
 
 #diva{  
 font-size: 150px;
 text-align: center;
+transition: 1s;
 }
